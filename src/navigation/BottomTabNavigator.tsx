@@ -8,7 +8,7 @@ import {
   ProgressStackNavigator,
   TrackStackNavigator,
 } from './';
-import colors from '../theme/colors';
+import {useTheme} from 'react-native-paper';
 
 type TabParamList = {
   TrackStackNavigator: undefined;
@@ -19,11 +19,16 @@ type TabParamList = {
 const Tab = createBottomTabNavigator<TabParamList>();
 
 export const BottomTabNavigator = () => {
+  const {colors} = useTheme();
+
   return (
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarStyle: styles.tabBar,
+        tabBarStyle: [
+          styles.tabBar,
+          {backgroundColor: colors.onPrimaryContainer},
+        ],
       }}>
       <Tab.Screen
         name="TrackStackNavigator"
@@ -33,7 +38,7 @@ export const BottomTabNavigator = () => {
           tabBarIcon: ({focused}: {focused: boolean}) => (
             <Ionicons
               name={'body'}
-              color={focused ? colors.selectedRed : colors.unselectedGray}
+              color={focused ? colors.primary : colors.onPrimary}
               size={25}
             />
           ),
@@ -47,7 +52,7 @@ export const BottomTabNavigator = () => {
           tabBarIcon: ({focused}: {focused: boolean}) => (
             <Ionicons
               name={'reader'}
-              color={focused ? colors.selectedRed : colors.unselectedGray}
+              color={focused ? colors.primary : colors.onPrimary}
               size={25}
             />
           ),
@@ -61,7 +66,7 @@ export const BottomTabNavigator = () => {
           tabBarIcon: ({focused}: {focused: boolean}) => (
             <Ionicons
               name={'bar-chart'}
-              color={focused ? colors.selectedRed : colors.unselectedGray}
+              color={focused ? colors.primary : colors.onPrimary}
               size={25}
             />
           ),
@@ -73,7 +78,6 @@ export const BottomTabNavigator = () => {
 
 const styles = StyleSheet.create({
   tabBar: {
-    backgroundColor: colors.primary,
     height: 50,
     paddingTop: 5,
   },

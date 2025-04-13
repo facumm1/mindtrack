@@ -1586,6 +1586,13 @@
     picocolors "^1.1.1"
     plist "^3.1.0"
 
+"@react-native-vector-icons/entypo@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@react-native-vector-icons/entypo/-/entypo-1.0.1.tgz#b853e57db518a8b3c001761cec61fec0c5f324bc"
+  integrity sha512-z5uo3vkNkXeTDKGUhYRhGDxqagmRf5cCfVARrbtbHB0G5VGuRQ5Pp25eV8QiCL7MU8cLE+kc4hNo9pz0qr3UHg==
+  dependencies:
+    "@react-native-vector-icons/common" "^11.0.0"
+
 "@react-native-vector-icons/ionicons@^7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@react-native-vector-icons/ionicons/-/ionicons-7.4.0.tgz#260243b4ae05f2ea05c723def1179314d8e16c9b"
@@ -5658,6 +5665,11 @@ react-freeze@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/react-freeze/-/react-freeze-1.0.4.tgz#cbbea2762b0368b05cbe407ddc9d518c57c6f3ad"
   integrity sha512-r4F0Sec0BLxWicc7HEyo2x3/2icUTrRmDjaaRyzzn+7aDyFZliszMDOgLVwSnQnYENOlL1o569Ze2HZefk8clA==
+
+react-hook-form@^7.55.0:
+  version "7.55.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.55.0.tgz#df3c80a20a68f6811f49bec3406defaefb6dce80"
+  integrity sha512-XRnjsH3GVMQz1moZTW53MxfoWN7aDpUg/GpVNc4A3eXRVNdGXfbzJ4vM4aLQ8g6XCUh1nIbx70aaNCl7kxnjog==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"

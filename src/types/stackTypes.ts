@@ -1,5 +1,6 @@
 export type TrackStackParamList = {
   TrackScreen: undefined;
+  DailyCheckScreen: undefined;
 };
 
 export type HistoryStackParamList = {
